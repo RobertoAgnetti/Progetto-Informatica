@@ -1,7 +1,10 @@
 [Ll]ibrary/
 [Tt]emp/
+[Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+MemoryCaptures/
+sysinfo.txt
 .obj/
 *.csproj
 *.unityproj
@@ -13,3 +16,4 @@
 .vscode/
 *.apk
 *.app
+*.aab
