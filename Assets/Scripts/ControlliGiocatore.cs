@@ -1,4 +1,4 @@
-
+ï»¿
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections;
@@ -10,9 +10,9 @@ using UnityEngine;
 public class ControlliGiocatore : MonoBehaviour
 {
     //movimenti
-    public float velocitàMovimento = 5f;
+    public float velocitÃ Movimento = 5f;
     public float forzaDiSalto = 12f;
-    public float velocitàScivolata = 0.5f;
+    public float velocitÃ Scivolata = 0.5f;
     public float tempoAggrappoMassimo = 3f;
     public float forzaSaltoMuro = 5f;
     public float spintaSaltoMuro = 5f;
@@ -25,8 +25,8 @@ public class ControlliGiocatore : MonoBehaviour
     private BoxCollider2D coll; //riferimento al box collider 2d
     private Animator anim;
     private SpriteRenderer spriteRenderer;
-    public bool èPerterra;
-    public bool èVicinoAlMuro;
+    public bool Ã¨Perterra;
+    public bool Ã¨VicinoAlMuro;
     private bool aggrappatoAlMuro;
     private bool staMuovendo;
 
@@ -38,13 +38,17 @@ public class ControlliGiocatore : MonoBehaviour
     private bool haDashato = false;
     private bool staDashando = false;
     private Color coloreOriginale;
+    //effetti dash
+    public ParticleSystem dashParticelle;
+    public float particelleRotationOffset = 180f;
 
     //vita
-    public bool èMorto = false;
+    public bool Ã¨Morto = false;
 
 
     public LayerMask layerMuro;
     public SpriteRenderer spriteGiocatore;
+    public TrailRenderer tr;
 
     private void Start()
     {
@@ -61,17 +65,17 @@ public class ControlliGiocatore : MonoBehaviour
     private void Update()
     {
 
-        èPerterra = ControlloPerterra();
-        èVicinoAlMuro = ControlloMuro();
+        Ã¨Perterra = ControlloPerterra();
+        Ã¨VicinoAlMuro = ControlloMuro();
 
         float movimentoInput = Input.GetAxisRaw("Horizontal");
         
 
 
-        float velocitàAnimazione = Mathf.Abs(movimentoInput);
-        anim.SetFloat("Speed", velocitàAnimazione);
+        float velocitÃ Animazione = Mathf.Abs(movimentoInput);
+        anim.SetFloat("Speed", velocitÃ Animazione);
 
-        anim.SetBool("perterra", èPerterra);
+        anim.SetBool("perterra", Ã¨Perterra);
 
         anim.SetBool("appeso", aggrappatoAlMuro);
 
@@ -84,14 +88,14 @@ public class ControlliGiocatore : MonoBehaviour
         }
 
         // Reset del dash quando tocchi terra
-        if (èPerterra)
+        if (Ã¨Perterra)
         {
             haDashato = false;
         }
 
 
         //AGGRAPPO AL MURO
-        aggrappatoAlMuro = èVicinoAlMuro && Input.GetMouseButton(0) && !èPerterra && !haSaltatoDalMuro;
+        aggrappatoAlMuro = Ã¨VicinoAlMuro && Input.GetMouseButton(0) && !Ã¨Perterra && !haSaltatoDalMuro;
 
         if (aggrappatoAlMuro)
         {
@@ -106,7 +110,7 @@ public class ControlliGiocatore : MonoBehaviour
             else
             {
                 rb.gravityScale = 1f;
-                rb.velocity = new Vector2(0f, -velocitàScivolata);
+                rb.velocity = new Vector2(0f, -velocitÃ Scivolata);
             }
 
 
@@ -122,14 +126,14 @@ public class ControlliGiocatore : MonoBehaviour
 
             if (!staDashando) // Solo se non sta dashando
             {
-                rb.velocity = new Vector2(movimentoInput * velocitàMovimento, rb.velocity.y);
+                rb.velocity = new Vector2(movimentoInput * velocitÃ Movimento, rb.velocity.y);
 
             if (movimentoInput != 0)
             {
                 transform.localScale = new Vector3(Mathf.Sign(movimentoInput), 1f, 1f); //in base a dove vado
                           // con l'input mi calcola la posizione a +1 se vado a destra e a -1 se vado a sinistra
             }
-                rb.velocity = new Vector2(movimentoInput * velocitàMovimento, rb.velocity.y);
+                rb.velocity = new Vector2(movimentoInput * velocitÃ Movimento, rb.velocity.y);
                 
             }
 
@@ -138,7 +142,7 @@ public class ControlliGiocatore : MonoBehaviour
 
 
         //SALTO
-        if (èPerterra && Input.GetKeyDown(KeyCode.Space))
+        if (Ã¨Perterra && Input.GetKeyDown(KeyCode.Space))
         {
             Salto();
         }
@@ -148,7 +152,7 @@ public class ControlliGiocatore : MonoBehaviour
             SaltoDalMuro();
         }
 
-        if (haDashato && !èPerterra)
+        if (haDashato && !Ã¨Perterra)
         {
             spriteGiocatore.color = coloreDash;
         }
@@ -165,7 +169,7 @@ public class ControlliGiocatore : MonoBehaviour
     {
         float distanzaRaggio = 1f;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distanzaRaggio, layerTerreno);
-        //spara un raggio che verifica se c'è il terreno
+        //spara un raggio che verifica se c'Ã¨ il terreno
         return hit.collider != null;
 
     }
@@ -211,27 +215,22 @@ public class ControlliGiocatore : MonoBehaviour
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
 
-        // Direzione del dash (basata sull'input o sulla direzione del personaggio)
-        Vector2 dashDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-
-        // Se nessuna direzione input, dash nella direzione corrente
-        if (dashDirection == Vector2.zero)
-        {
-            dashDirection = new Vector2(transform.localScale.x > 0 ? 1 : -1, 0);
-        }
-
+        // 1) Leggo input completo (8 direzioni)
+        Vector2 dashDirection = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical")).normalized;
         rb.velocity = dashDirection * forzaDash;
-        
+
+        tr.emitting = true;
+
 
         yield return new WaitForSeconds(durataDash);
 
-        // Ripristina valori originali
+        tr.emitting = false;
         rb.gravityScale = originalGravity;
-        
         staDashando = false;
 
-            yield return new WaitForSeconds(CooldownDash);
-        // Dopo il cooldown, il dash può essere riusato solo se si tocca terra
+
+        yield return new WaitForSeconds(CooldownDash);
+
     }
 
     public void RipristinaDash()
@@ -241,26 +240,26 @@ public class ControlliGiocatore : MonoBehaviour
     }
 
     public float moltiplicatoreCaduta = 1.5f; // Regola quanto velocemente cade (1.5-2.5)
-    public float maxVelocitàCaduta = -20f; // Velocità massima di caduta
+    public float maxVelocitÃ Caduta = -20f; // VelocitÃ  massima di caduta
 
     private void FixedUpdate()
     {
-        // Controllo caduta più rapida e limitata
-        if (rb.velocity.y < 0 && !èPerterra)
+        // Controllo caduta piÃ¹ rapida e limitata
+        if (rb.velocity.y < 0 && !Ã¨Perterra)
         {
-            // 1. Applica una gravità extra durante la caduta
+            // 1. Applica una gravitÃ  extra durante la caduta
             rb.velocity += Vector2.up * Physics2D.gravity.y * (moltiplicatoreCaduta - 1) * Time.fixedDeltaTime;
 
-            // 2. Limita la velocità di caduta
-            rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, maxVelocitàCaduta));
+            // 2. Limita la velocitÃ  di caduta
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, maxVelocitÃ Caduta));
         }
     }
 
     public void Muori()
     {
-        if (èMorto) return;
+        if (Ã¨Morto) return;
 
-        èMorto = true;
+        Ã¨Morto = true;
 
         enabled = false; //disabilita i controlli
 

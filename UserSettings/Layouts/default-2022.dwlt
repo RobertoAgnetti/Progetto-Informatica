@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 421}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 69
+  controlID: 54
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -121,8 +121,8 @@ MonoBehaviour:
     y: 0
     width: 453
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -371,7 +371,6 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: -5201271519334551071, guid: e044cc74be0530841814f391a4de6501, type: 2}
     - {fileID: -7359067055754869495, guid: a9b0a84fc591e2c4f853838814989a11, type: 2}
-    - {fileID: 2310623020546098666, guid: 2103880cf08b15646b000bdc8b2e1c40, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.56875
       e01: 0
@@ -397,22 +396,6 @@ MonoBehaviour:
       e11: 0.71894735
       e12: 0
       e13: 137.04738
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
       e20: 0
       e21: 0
       e22: 1
@@ -473,7 +456,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 30374
+  m_LastSelectedObjectID: 31546
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -553,7 +536,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animazioni
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -561,15 +544,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Animazioni
+  - Assets/Scripts
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\bobbo\projects\Progetto_Agnetti
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 47}
-    m_SelectedIDs: 42740000
-    m_LastClickedID: 29762
+    scrollPos: {x: 0, y: 254}
+    m_SelectedIDs: fe750000
+    m_LastClickedID: 30206
     m_ExpandedIDs: 00000000387400003a7400003c7400003e74000040740000427400004474000046740000487400004a7400004c7400004e74000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -738,9 +721,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: cc6f0000
+      m_SelectedIDs: e4300000
       m_LastClickedID: 0
-      m_ExpandedIDs: 1afbffff
+      m_ExpandedIDs: 5ca3feff1ab3feffa090ffffa0a4ffffe6dfffff48e1fffff0e1fffff2e3ffff2ae5ffff7ef8ffff1afbfffffe700000b87700003a780000727a00008e7a0000f47a00003a7b000004900000b6a40000aaa60000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -756,7 +739,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 6}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1198,9 +1181,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.189069, y: 18.118605, z: 0.89018035}
+    m_Target: {x: -297.16138, y: 0.132541, z: 1.1903714}
     speed: 2
-    m_Value: {x: 6.07916, y: 17.140875, z: 0.9044914}
+    m_Value: {x: -297.16138, y: 0.132541, z: 1.1903714}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1250,9 +1233,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 33.233414
+    m_Target: 3.2079606
     speed: 2
-    m_Value: 31.80231
+    m_Value: 3.2079606
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1344,7 +1327,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1398,7 +1381,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 745
-    width: 510
+    width: 590
     height: 246
   m_SerializedDataModeController:
     m_DataMode: 0

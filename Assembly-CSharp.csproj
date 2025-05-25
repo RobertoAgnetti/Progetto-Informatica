@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Fill.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\Spine.cs" />
+    <Compile Include="Assets\Scripts\PausaMenuManager.cs" />
     <Compile Include="Assets\Scripts\ControlliGiocatore.cs" />
     <Compile Include="Assets\Scripts\CameraSegui.cs" />
   </ItemGroup>
