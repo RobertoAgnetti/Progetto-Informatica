@@ -8,13 +8,13 @@ public class FullScreen : MonoBehaviour
 
     public Toggle fullscreenToggle;
 
-    // Start is called before the first frame update
+    // copiata da un sito, non so se funziona
     void Start()
     {
-        // Inizializza il toggle allo stato corrente dello schermo
+        
         fullscreenToggle.isOn = Screen.fullScreen;
 
-        // Aggiungi l'evento per cambiare la modalità
+        
         fullscreenToggle.onValueChanged.AddListener(SetFullscreen);
     }
 

@@ -45,6 +45,16 @@ public class ControlliGiocatore : MonoBehaviour
     //vita
     public bool èMorto = false;
 
+    //audio
+    public AudioSource audioSource;
+    public AudioSource sfxSource;
+    public AudioClip footstepClip;       
+    public AudioClip dashClip;           
+    public AudioClip deathClip;
+    public AudioClip jumpClip;
+    // Per controllare i passi
+    private bool wasMovingLastFrame = false;
+
 
     public LayerMask layerMuro;
     public SpriteRenderer spriteGiocatore;
@@ -57,6 +67,10 @@ public class ControlliGiocatore : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+        if (sfxSource == null)
+            sfxSource = gameObject.AddComponent<AudioSource>();
     }
 
     public LayerMask layerTerreno; // layer per il pavimento 
@@ -69,7 +83,20 @@ public class ControlliGiocatore : MonoBehaviour
         èVicinoAlMuro = ControlloMuro();
 
         float movimentoInput = Input.GetAxisRaw("Horizontal");
-        
+        staMuovendo = Mathf.Abs(movimentoInput) > 0.1f && èPerterra;
+
+
+        if (staMuovendo && !wasMovingLastFrame)
+        {
+            audioSource.clip = footstepClip;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        else if ((!staMuovendo || !èPerterra) && wasMovingLastFrame)
+        {
+            audioSource.Stop();
+        }
+        wasMovingLastFrame = staMuovendo;
 
 
         float velocitàAnimazione = Mathf.Abs(movimentoInput);
@@ -185,6 +212,7 @@ public class ControlliGiocatore : MonoBehaviour
 
     private void Salto()
     {
+        sfxSource.PlayOneShot(jumpClip);
         rb.velocity = new Vector2(rb.velocity.x, forzaDiSalto);
     }
 
@@ -193,6 +221,8 @@ public class ControlliGiocatore : MonoBehaviour
         float direzioneSalto = transform.localScale.x > 0 ? -1 : 1;
 
         rb.velocity = new Vector2(direzioneSalto * spintaSaltoMuro, forzaSaltoMuro);
+
+        sfxSource.PlayOneShot(jumpClip);
 
         aggrappatoAlMuro = false;
         haSaltatoDalMuro = true;
@@ -211,6 +241,7 @@ public class ControlliGiocatore : MonoBehaviour
     private IEnumerator FareDash()
     {
         haDashato = true;
+        sfxSource.PlayOneShot(dashClip, 0.2f);
         staDashando = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
@@ -260,6 +291,8 @@ public class ControlliGiocatore : MonoBehaviour
         if (èMorto) return;
 
         èMorto = true;
+
+        sfxSource.PlayOneShot(deathClip);
 
         enabled = false; //disabilita i controlli
 

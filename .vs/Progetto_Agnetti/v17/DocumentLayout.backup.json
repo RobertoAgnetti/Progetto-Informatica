@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|c:\\users\\bobbo\\projects\\progetto_agnetti\\assets\\scripts\\pausamenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausamenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|c:\\users\\bobbo\\projects\\progetto_agnetti\\assets\\scripts\\zone_transition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zone_transition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\parallaxbg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\parallaxbg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\controlligiocatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controlligiocatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\pausamenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausamenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\fullscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fullscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\spine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\controlligiocatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controlligiocatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\fullscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fullscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\stanzavisuale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +41,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\assets\\scripts\\camerasegui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BE4A2AB-BCC9-226B-36F7-DB277DE515A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerasegui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\bobbo\\projects\\progetto_agnetti\\assets\\scripts\\biomemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\biomemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,15 +59,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PausaMenu.cs",
-              "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\PausaMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PausaMenu.cs",
-              "ToolTip": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\PausaMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PausaMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "Zone_Transition.cs",
+              "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\Zone_Transition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Zone_Transition.cs",
+              "ToolTip": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\Zone_Transition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Zone_Transition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:05:23.29Z",
+              "WhenOpened": "2025-05-27T15:45:06.355Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BiomeManager.cs",
+              "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\BiomeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BiomeManager.cs",
+              "ToolTip": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\BiomeManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BiomeManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:03:27.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ParallaxBG.cs",
+              "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\ParallaxBG.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ParallaxBG.cs",
+              "ToolTip": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\ParallaxBG.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ParallaxBG.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T14:57:42.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PausaMenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\PausaMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PausaMenuManager.cs",
+              "ToolTip": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\PausaMenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PausaMenuManager.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T20:18:38.859Z"
             },
             {
               "$type": "Document",
@@ -71,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MenuController.cs",
               "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\MenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuController.cs",
@@ -83,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Spine.cs",
               "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\Spine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spine.cs",
@@ -91,12 +139,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Spine.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T13:19:25.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T13:19:25.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Fill.cs",
               "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\Fill.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Fill.cs",
@@ -108,19 +155,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ControlliGiocatore.cs",
               "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\ControlliGiocatore.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ControlliGiocatore.cs",
               "ToolTip": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\ControlliGiocatore.cs",
               "RelativeToolTip": "Assets\\Scripts\\ControlliGiocatore.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAYwAkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAiwOYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T16:07:51.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "stanzaVisuale.cs",
               "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\stanzaVisuale.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\stanzaVisuale.cs",
@@ -132,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CameraSegui.cs",
               "DocumentMoniker": "C:\\Users\\bobbo\\projects\\Progetto_Agnetti\\Assets\\Scripts\\CameraSegui.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraSegui.cs",

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
 
-    // Il nome esatto della scena di gioco inserita in Build Settings
+    // Il nome esatto della scena di gioco 
     public string gameSceneName = "SampleScene";
 
     public string gameImpSceneName = "Impostazioni";
@@ -31,7 +31,7 @@ public class MenuController : MonoBehaviour
         Console.WriteLine("Torna al game menu");
     }
 
-    public void QuitGame()
+    public void QuitGame() 
     {
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
